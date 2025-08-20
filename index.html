@@ -1,91 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <style>
-    h1 {
-      color: #66BFBF;
-    }
-
-    p {
-      color: #66BFBF;
-      font-weight: normal;
-    }
-
-    h2 {
-      color: #11999E;
-    }
-
-    h3 {
-      color: #11999E;
-    }
-  </style>
-  <meta charset="utf-8">
-  <title>Advanced Personal Site</title>
-  <link rel="icon" href="Boy.ico">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href=https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparsh Talaulikar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+<body class="bg-gray-50 text-gray-800">
 
-<body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'm Sparsh.</h1>
-    <p>A <span class="pro">Web Desiger</span> & Developer</p>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img src="images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images/sparsh.jpg" alt="My Profile Image">
-      <h2>Hello</h2>
-      <p>I am a student studying at the Kings School Goa</p>
-    </div>
-    <hr>
-    </hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <img class="" src="images/skills.png" alt="skills img">
-      <br></br>
-      <div class="skill-row">
-        <h2>Web Development</h2>
-        <img class="skill-gif" src="images/web dev.gif" alt="skill gif">
-        <p>I have developed two websites.You Can Visit My Legacy Site by clicking on the Link below.</p>
-        <a class="footer-link" href="https://sparshtalaulikar.github.io/Legacy-Site/">Legacy Site</a>
+  <!-- Hero Section -->
+  <header class="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+    <img src="your-photo.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-6" data-aos="zoom-in">
+    <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Hi, I'm Sparsh</h1>
+    <p class="text-xl" data-aos="fade-up" data-aos-delay="200">Student • Web Developer • Cyclist</p>
+    <a href="#about" class="mt-6 px-6 py-3 bg-white text-indigo-600 font-semibold rounded-full shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="400">
+      Know More
+    </a>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+    <!-- About Me -->
+    <section id="about" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I’m a student passionate about web design and development. I enjoy building modern, responsive websites and exploring new technologies. When I’m not coding, I love cycling, reading, and movies.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="flex flex-wrap gap-4">
+        <span class="px-4 py-2 bg-white rounded-xl shadow hover:scale-110 transition">HTML</span>
+        <span class="px-4 py-2 bg-white rounded-xl shadow hover:scale-110 transition">CSS</span>
+        <span class="px-4 py-2 bg-white rounded-xl shadow hover:scale-110 transition">JavaScript</span>
+        <span class="px-4 py-2 bg-white rounded-xl shadow hover:scale-110 transition">Tailwind CSS</span>
       </div>
-      <hr>
-      </hr>
-      <div class="skill-row">
-        <h2>Cycling</h2>
-        <img src="images/Polgon Path 3.png" alt="Cycle">
-        <p>I am a Proficient Cyclist with my Longest Ride Being 40+Kms. My Uncle has played a huge role in Inspiring and Motivating me to follow this hobby of mine as he himself is an Expert Cyclist. Checkout My Activities On my Strava Account Linked Below </p>
-        <a class="footer-link" href="https://www.strava.com/athletes/70200746">My Strava</a>
-        <h2>Reading</h2>
-        <img src="images/Reading.png" alt="Reading">
-        <p>I Love Reading Books and I have read a lot of Books and Famous Series of Books. One Of them is the Very Popular Harry Potter Series</p>
-        <h2>Watching Movies</h2>
-        <img src="images/Cinema.jpg" alt="Cinema">
-        <p>I am a Born Cinephile and this Quality has been passed on to me from my Biggest Inspiration: My DAD 🧔🏻‍♂️</p>
-        <p></p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="#" class="bg-white rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="project1.jpg" alt="Project 1" class="rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-semibold">Project One</h3>
+            <p class="text-sm text-gray-600">A simple project description here.</p>
+          </div>
+        </a>
+        <a href="#" class="bg-white rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="project2.jpg" alt="Project 2" class="rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-semibold">Project Two</h3>
+            <p class="text-sm text-gray-600">Another project description here.</p>
+          </div>
+        </a>
       </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <a href="mailto: talaulikar1877@gmail.com" class="BUTTON_QLP">Contact Me</a>
-    </div>
-    <br></br>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.quora.com/profile/TheVergeboy">My Quora</a>
-<br>
-      <a class="footer-link" href="https://www.instagram.com/SparshTalaulikar_/">My Instagram</a>
+    </section>
 
-      
+    <!-- Hobbies -->
+    <section id="hobbies" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Beyond Coding</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          🚴 <p class="mt-2">Cycling</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          📚 <p class="mt-2">Reading</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          🎥 <p class="mt-2">Movies</p>
+        </div>
+      </div>
+    </section>
 
-      <h3>Sparsh Talaulikar</h3>
-    </div>
+    <!-- Contact -->
+    <section id="contact" data-aos="zoom-in">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p>Email me at <a href="mailto:you@example.com" class="text-indigo-600 underline">you@example.com</a></p>
+      <div class="flex gap-4 mt-4 justify-center">
+        <a href="https://github.com/sparshtalaulikar" class="hover:scale-110 transition">🐙 GitHub</a>
+        <a href="https://www.linkedin.com" class="hover:scale-110 transition">💼 LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
+  <footer class="text-center py-6 text-sm text-gray-600">
+    © 2025 Sparsh Talaulikar
+  </footer>
+
+  <!-- Init AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
-
 </html>
